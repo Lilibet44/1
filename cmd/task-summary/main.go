@@ -27,6 +27,28 @@ func countStatus(statuses []string, target string) int {
 	return count
 }
 
+// ФУНКЦИЯ ДЛЯ ДОПОЛНИТЕЛЬНОГО ЗАДАНИЯ A (поиск индекса первого совпадения)
+func findStatus(statuses []string, target string) int {
+	for i, s := range statuses {
+		if s == target {
+			return i
+		}
+	}
+	return -1
+}
+
+// ФУНКЦИЯ ДЛЯ ДОПОЛНИТЕЛЬНОГО ЗАДАНИЯ Б (доля выполненных задачь)
+func completionPercent(statuses []string) float64 {
+	var s float64 = float64(len(statuses))                 //всего задач
+	var d float64 = float64(countStatus(statuses, "done")) //
+	if d != 0 || s != 0 {
+		x := 100 * s / d
+		return x
+	}
+	return 0
+}
+
+// ОСНОВНАЯ ЧАСТЬ КОДА
 func main() {
 	statuses := []string{"new", "in_progress", "done", "done"}
 	statuses = append(statuses, "new")
@@ -45,4 +67,16 @@ func main() {
 	for _, i := range d {
 		fmt.Printf("%s=%d\n", i, s[i])
 	}
+	// Пункт А в доп задании
+	fmt.Println("- Дополнительное задание")
+	fmt.Println("V")
+	fmt.Println("- A")
+	fmt.Printf("%d\n", findStatus(statuses, "new"))
+	fmt.Printf("%d\n", findStatus(statuses, "break"))
+	fmt.Printf("%d\n", findStatus(statuses, ""))
+	// Пункт Б в доп задании
+	fmt.Println("V")
+	fmt.Println("- Б")
+	fmt.Printf("%f\n", completionPercent(statuses))
+
 }

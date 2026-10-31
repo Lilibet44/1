@@ -57,10 +57,6 @@ go build ./...
 |`m`|количество минут вводящееся с клавиатуры/ кол-во полных часов|
 |`sec`|кол-во оставшихся минут|
 
-*Вывод*
-
-<img width="192" height="78" alt="image" src="https://github.com/user-attachments/assets/33790d1c-4ce0-4f86-93fd-ef46bc5519f5" />
-
 
 ## Проверенные данные
 
@@ -114,6 +110,11 @@ go build ./...
 |`s`|массив с status|
 |`d`|новый срез|
 
+*Вывод*
+
+<img width="343" height="361" alt="image" src="https://github.com/user-attachments/assets/c579fbb6-0713-4caa-9cd9-ac459b5eec9b" />
+
+
 ## Что осталось сделать
 
 - обязательные задания выполнены.
@@ -150,6 +151,11 @@ go build ./...
 |`complite`|счетчик выполненых задач|
 |`i`|элемент из tasks для подсчета complite|
 |`task`|элемент из tasks, по которого применяется функция Summary()|
+
+*Вывод*
+
+<img width="336" height="92" alt="image" src="https://github.com/user-attachments/assets/c81aeaec-4b5e-48ff-b6b0-4ef8949bbfa9" />
+
 
 ## Что осталось сделать
 

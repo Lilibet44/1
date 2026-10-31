@@ -27,7 +27,7 @@ go fmt ./...
 go build ./...
 ```
 
-## Пояснение к программе
+## Пояснение к программе (1)
 
 *Задание 2 (card)*
 
@@ -42,6 +42,11 @@ go build ./...
 |`compl`|количество выполненных заданий|
 |`d`|переменная типа bool|
 
+*Вывод*
+
+<img width="486" height="258" alt="image" src="https://github.com/user-attachments/assets/c54c04ff-8aaa-436f-9b98-9dfa92e46ea2" />
+
+## Пояснение к программе (2)
 
 *Задание 3 (time-converter)*
 
@@ -51,6 +56,10 @@ go build ./...
 |`min`|константа минут в часе|
 |`m`|количество минут вводящееся с клавиатуры/ кол-во полных часов|
 |`sec`|кол-во оставшихся минут|
+
+*Вывод*
+
+<img width="192" height="78" alt="image" src="https://github.com/user-attachments/assets/33790d1c-4ce0-4f86-93fd-ef46bc5519f5" />
 
 
 ## Проверенные данные
